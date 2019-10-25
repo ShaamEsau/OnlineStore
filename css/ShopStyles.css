@@ -1,0 +1,93 @@
+/* Changes font type */
+h1,
+h2,
+h3,
+p,
+label {
+
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+/* Aligns to the left, adds 5 pixel padding, changes font color to white, background color to blue and adds a border of 1 pixel thats a solid white line */
+.headLand,
+.location {
+    float: left;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    border: 1px solid white;
+}
+
+/* Removes list styling */
+.location ul li {
+    list-style-type: none;
+}
+
+/* Aligns text to the center */
+h1 {
+    text-align: center;
+}
+
+/* Adds an animation to the body that goes on infinity for a duration of 10 seconds each time */
+body {
+    background-color: powderblue;
+}
+
+
+/* Adds a solid white line of 1 pixel and curves border corners for 10 pixels */
+table,
+img {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Adds padding of 5 pixels */
+img,
+button {
+    padding: 5px;
+}
+
+/* Adds a background color of blue and border of 1 pixel that is a solid white line */
+.navbar {
+    background-color: blue;
+    border: 1px solid white;
+}
+
+/* Changes font color to white */
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+/* Adds border of 1 pixel that is a solid white line and centers picture to align with margin */
+.carousel-inner img {
+    border: 1px solid white;
+
+}
+
+/* When hovering over item it changes brightness to 50% */
+.carousel-inner img:hover {
+    filter: brightness(50%);
+}
+
+/* Changes font style to italic and bold. Makes font color red */
+q,
+.NB {
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+/* Sets the size of the image */
+a .img-thumbnail {
+    width: 150px;
+    height: 100px;
+}
+
+/* When hovering over the image it changes the size of it and sets opacity to 30% */
+.img-thumbnail:hover {
+    width: 400px;
+    height: 200px;
+    filter: opacity(30%);
+}

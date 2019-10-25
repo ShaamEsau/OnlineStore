@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MHW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Calls my own css file -->
+    <link rel="stylesheet" type="text/css" href="css/ShopStyles.css">
+</head>
+
+<body>
+    <!-- Creates a navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Creates a brand that acts as a home button -->
+        <a class="navbar-brand" href="Landing.html">Gamers Playground</a>
+        <!-- When the page becomes smaller the navigation buttons are stored in a menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Acts as a navigation button that when clicked takes you to another page -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="Catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Cart.html">Cart</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Shipping.html">Shipping</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Converts text to heading 1 -->
+    <h1>Monster Hunter World</h1>
+    <!-- Inserts an image -->
+    <img id="prodImg" src="images/MHW.jpg">
+    <!-- Creates a button that executes a function when clicked on -->
+    <button onclick="addMHW()">Add to Cart</button>
+    <br>
+    <!-- Creates paragraphs -->
+    <p>In Stock : Yes</p>
+    <p>Price : R700.00</p>
+    <p><b>NB!! VAT Varies per product</b><br> The latest entry in the critically acclaimed 40 million unit selling action RPG series, Monster Hunter: World introduces a living, breathing ecosystem in which players take on the role of a hunter that seeks and slays ferocious beasts in heart-pounding battles. Venture on quests alone or with up to three other hunters in a newly designed online drop-in multiplayer system which allows cross-region cooperative play between Japan and the West, uniting the global player base for the first time ever. Monster Hunter: World will also be the first game in the series with a worldwide simultaneous launch window.<br>
+        Monster Hunter: World sees players gear up to venture on quests to battle against fearsome monsters, progressively improving their hunting abilities as they play. Loot collected from fallen foes can be used to create new equipment and armor upgrades as players seamlessly move across map areas that comprise the living ecosystems. The landscape and its diverse inhabitants play a critical role as players strategically use the surrounding environment to their advantage. Hunters must use their cunning and technique to survive the intense and evolving fights as they battle to become the ultimate hunter!</p>
+    <!-- Calls custom JavaScript file to manipulate the page -->
+    <script type="text/javascript" src="js/shop.js"></script>
+</body>
+
+</html>

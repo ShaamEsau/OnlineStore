@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NFL19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Calls my own css file -->
+    <link rel="stylesheet" type="text/css" href="css/ShopStyles.css">
+</head>
+
+<body>
+    <!-- Creates a navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Creates a brand that acts as a home button -->
+        <a class="navbar-brand" href="Landing.html">Gamers Playground</a>
+        <!-- When the page becomes smaller the navigation buttons are stored in a menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Acts as a navigation button that when clicked takes you to another page -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="Catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Cart.html">Cart</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Shipping.html">Shipping</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Converts text to heading 1 -->
+    <h1>Madden NFL 19</h1>
+    <!-- Inserts an image -->
+    <img id="prodImg" src="images/NFL19.jpg">
+    <!-- Creates button that executes function when clicked on -->
+    <button onclick="addNFL()">Add to Cart</button>
+    <br>
+    <!-- Creates paragraphs -->
+    <p>In Stock : Yes</p>
+    <p>Price : R650.00</p>
+    <p><b>NB!! VAT Varies per product</b><br>Madden NFL 19 with more precision and control to win in all the ways you play. Prove your on-field stick-skills with more control over every step, in game-changing moments through the introduction of Real Player Motion. Take control over how you build your dynasty powered by all-new strategic team building tools and the first ever custom draft class creator in Franchise. Dominate the competition with all new ways to build and progress your NFL stars from the past and present in Ultimate Team.</p>
+    <!-- Calls custom script that manipulates page -->
+    <script type="text/javascript" src="js/shop.js"></script>
+</body>
+
+</html>

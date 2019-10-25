@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NFS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Calls my own css file -->
+    <link rel="stylesheet" type="text/css" href="css/ShopStyles.css">
+</head>
+
+<body>
+    <!-- Creates a navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Creates a brand that acts as a home button -->
+        <a class="navbar-brand" href="Landing.html">Gamers Playground</a>
+        <!-- When the page becomes smaller the navigation buttons are stored in a menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Acts as a navigation button that when clicked takes you to another page -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="Catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Cart.html">Cart</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Shipping.html">Shipping</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Converts to text to heading 1 format -->
+    <h1>Need For Speed Payback</h1>
+    <!-- Inserts image -->
+    <img id="prodImg" src="images/NFSP.png">
+    <!-- Creates button that executes function when clicked on -->
+    <button onclick="addNFS()">Add to Cart</button>
+    <br>
+    <!-- Creates paragraphs -->
+    <p>In Stock : Yes</p>
+    <p>Price : R450.00</p>
+    <p><b>NB!! VAT Varies per product</b><br>Set in the underworld of Fortune Valley, you and your crew were divided by betrayal and reunited by revenge to take down The House, a nefarious cartel that rules the city’s casinos, criminals and cops. In this corrupt gambler’s paradise, the stakes are high and The House always wins.<br>
+        Craft unique rides with deeper performance and visual customisation than ever before. Push them to the limit when you narrowly escape the heat in epic cop battles. From insane heist missions to devastating car battles to jaw-dropping set piece moments, Need for Speed Payback delivers an edge-of-your-seat, adrenaline-fueled action-driving fantasy.</p>
+    <!-- Calls custom JavaScript file to manipulate page -->
+    <script type="text/javascript" src="js/shop.js"></script>
+</body>
+
+</html>

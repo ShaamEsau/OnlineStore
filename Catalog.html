@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Catalog</title>
+    <!-- Calls the boostrap files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Calls my own css file -->
+    <link rel="stylesheet" type="text/css" href="css/ShopStyles.css">
+</head>
+
+<body>
+    <!-- Creates a navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Creates a brand that acts as a home button -->
+        <a class="navbar-brand" href="Landing.html">Gamers Playground</a>
+        <!-- When the page becomes smaller the navigation buttons are stored in a menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Acts as a navigation button that when clicked takes you to another page -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="Cart.html">Cart</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Shipping.html">Shipping</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Converts text to Heading 1 -->
+    <h1>Catalog</h1>
+    <!-- Creates a responsive Grid -->
+    <div class="container-fluid">
+        <!-- Creates a row in the grid -->
+        <div class="row">
+            <!-- Spans a column to take up six spaces in the grid -->
+            <div class="col-md-6">
+                <!-- Converts text to Heading 2 -->
+                <h2>Sniper Elite 4</h2>
+                <!-- Inserts an image into the page with a thumbnail border, responsive and shaped roundly -->
+                <!-- The image acts as a button that when clicked on takes you to a different page -->
+                <a class="btn" href="Sniper.html" role="button">
+                    <img src="images/SE4.jpg" class="img-thumbnail img-fluid rounded-circle" alt="thumbnail">
+                </a>
+                <br>
+                <!-- Creates button that executes specified function when clicked on -->
+                <button onclick="addSnipe()">Quick Add to Cart</button>
+                <br>
+                <h2>Madden NFL 19</h2>
+                <a class="btn" href="NFL.html" role="button">
+                    <img src="images/NFL19.jpg" class="img-thumbnail img-fluid rounded-circle" alt="thumbnail">
+                </a>
+                <br>
+                <button onclick="addNFL()">Quick Add to Cart</button>
+            </div>
+            <div class="col-md-6">
+                <h2>Monster Hunter World</h2>
+                <a class="btn" href="MHW.html" role="button">
+                    <img src="images/MHW.jpg" class="img-thumbnail img-fluid rounded-circle" alt="thumbnail">
+                </a>
+                <br>
+                <button onclick="addMHW()">Quick Add to Cart</button>
+                <br>
+                <h2>Need for Speed Payback</h2>
+                <a class="btn" href="NFS.html" role="button">
+                    <img src="images/NFSP.png" class="img-thumbnail img-fluid rounded-circle" alt="thumbnail">
+                </a>
+                <br>
+                <button onclick="addNFS()">Quick Add to Cart</button>
+                <br>
+            </div>
+            <br>
+            <!-- Creates a paragraph -->
+            <p><b><u> These Prices excludes VAT</u></b></p>
+            <br>
+            <!-- Creates a table that is dark and responds when the mouse hovers over -->
+            <table class="table table-hover table-dark">
+                <!-- Creates a table row -->
+                <tr>
+                    <!-- Inserts a table heading -->
+                    <th>Name</th>
+                    <th>In Stock</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <!-- Inserts data into the table -->
+                    <td>Sniper Elite 4</td>
+                    <td>Yes</td>
+                    <td>R400.00</td>
+                </tr>
+                <tr>
+                    <td>Madden NFL 19</td>
+                    <td>Yes</td>
+                    <td>R650.00</td>
+                </tr>
+                <tr>
+                    <td>Monster Hunter World</td>
+                    <td>Yes</td>
+                    <td>R700.00</td>
+                </tr>
+                <tr>
+                    <td>Need for Speed Payback</td>
+                    <td>Yes</td>
+                    <td>R450.00</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Calls custom JavaScript file to manipulate page -->
+        <script type="text/javascript" src="js/shop.js"></script>
+</body>
+
+</html>

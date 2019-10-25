@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sniper Elite 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Calls my own css file -->
+    <link rel="stylesheet" type="text/css" href="css/ShopStyles.css">
+</head>
+
+<body>
+    <!-- Creates a navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Creates a brand that acts as a home button -->
+        <a class="navbar-brand" href="Landing.html">Gamers Playground</a>
+        <!-- When the page becomes smaller the navigation buttons are stored in a menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Acts as a navigation button that when clicked takes you to another page -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="Catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Cart.html">Cart</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Shipping.html">Shipping</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Converts text to heading 1 format -->
+    <h1>Sniper Elite 4</h1>
+    <!-- Inserts img -->
+    <img id="prodImg" src="images/SE4.jpg">
+    <!-- Creates a button that executes a function when clicked on -->
+    <button onclick="addSnipe()">Add to Cart</button>
+    <br>
+    <!-- Creates paragraphs -->
+    <p>In Stock : Yes</p>
+    <p>Price : R400.00</p>
+    <p><b>NB!! VAT Varies per product</b><br>Set in the aftermath of its award-winning predecessor, Sniper Elite 4 continues the series' World War Two heritage by transporting players across the beautiful Italian peninsula, from sun-drenched Mediterranean coastal towns, to colossal Nazi mega structures, daunting forests and giddying mountain monasteries inspired by Monte Cassino.<br>
+        Covert agent and elite marksman Karl Fairburne must fight alongside the brave men and women of the Italian Resistance to help free their country from the yoke of Fascism, and defeat a terrifying new threat with the potential to halt the Allied fightback in Europe before it's even begun.
+        If his mission fails, there will be no Operation Overlord, no D-Day landings, and no Victory in Europe.</p>
+    <!-- Calls custom JavaScript file to manipulate the page -->
+    <script type="text/javascript" src="js/shop.js"></script>
+</body>
+
+</html>
